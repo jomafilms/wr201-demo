@@ -38,7 +38,7 @@ Build a tiny multi-user "items" app — a teaching demo. Keep it minimal and sol
 
 ## The two checks (how you know it's real)
 
-1. **Refresh test** — add something, refresh (or reopen the tab). Still there? It saved to the server.
+1. **Refresh test** — add something, hard-refresh (or reopen the tab). Still there? It saved to the server.
 2. **Two-browser test** — sign in as one person in a normal window and a *different* person in a
    private/incognito window. Each sees only their own items.
 

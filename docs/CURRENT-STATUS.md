@@ -7,6 +7,19 @@
 
 ---
 
+## 👋 First time here? (read this first)
+
+Fresh clone or new machine? Get it running before touching anything:
+
+1. `cp .env.example .env.local` — creates your local settings (SQLite + a dev auth secret; works as-is).
+2. `pnpm install`
+3. `pnpm db:push` — creates the local SQLite database (`./local.db`).
+4. `pnpm dev` → http://localhost:3000
+
+Then confirm it's real: add an item and **hard-refresh** (it persists), and sign in as a second user in an incognito window (separate data). Full walkthrough: **`handoff/getting-started.md`**. Deploy: **`SETUP.md`**.
+
+---
+
 ## What Was Last Done
 
 - Scaffolded Next.js 16 (App Router, TypeScript, Tailwind 4).
@@ -35,7 +48,7 @@
 
 ## Known Issues / Blockers
 
-- None. `local.db` is gitignored — each machine runs `pnpm db:push` once to create it.
+- None. A fresh clone has no `.env.local` or `local.db` (both gitignored) — run `cp .env.example .env.local`, then `pnpm db:push` once. See the first-time block above.
 
 ---
 
@@ -58,5 +71,6 @@
 
 ## Reference Docs (Tier 1 — rarely change)
 
+- `handoff/getting-started.md` — first-run walkthrough + orientation (start here)
 - `docs/PROJECT-RULES.md` — code values + technical constraints
 - `README.md` — what this is, quick start, the two tests, how to reuse as a starter

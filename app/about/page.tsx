@@ -65,7 +65,7 @@ export default function About() {
         <h2 className="text-lg font-semibold">How to know it&apos;s real</h2>
         <ul className="list-disc pl-5 flex flex-col gap-1 text-sm opacity-80">
           <li>
-            <strong>Refresh it, come back tomorrow.</strong> Still there? It saved.
+            <strong>Hard-refresh it, come back tomorrow.</strong> Still there? It saved.
           </li>
           <li>
             <strong>Open a second browser, sign in as someone else.</strong>{" "}
