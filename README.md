@@ -61,6 +61,8 @@ The `.claude/` folder makes an agent follow a repeatable loop instead of freelan
 - **`/dev`** — start the local dev server for your working lane.
 - **`/project-status`** — a timestamped snapshot of where the project stands.
 - **`/sync-skills`** — pull the latest shared version of these skills.
+- **`/migrate`** *(advanced)* — safe dev/prod database migrations: dev-first, launch-gated prod writes, a Neon rollback branch, and data-loss-safe rollback. A good 301 anchor once the app has real data.
+- **`/orchestrate`** *(advanced)* — drive several parallel builders from one strategy session, each isolated in its own git worktree, with human-in-loop gates.
 
 The docs the agent reads every time:
 

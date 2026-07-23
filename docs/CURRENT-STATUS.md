@@ -28,6 +28,7 @@ Then confirm it's real: add an item and **hard-refresh** (it persists), and sign
 - Built the items app: sign up / sign in / sign out, a title+body form, and a per-user list (each row has a `userId` FK — you only see your own).
 - Verified end to end: `pnpm install`, `pnpm db:push`, `pnpm build` all green; real signup writes to SQLite; item write + re-read persists.
 - Seeded the agent workflow layer: `.claude/skills/` (init, wrap, update, check, dev, project-status, sync-skills), `templates/`, this docs set, and three paste-ready briefs in `handoff/`.
+- Added two advanced (optional) skills: `/migrate` (dev/prod migration safety — Neon rollback branch, data-loss-safe rollback) and a genericized `/orchestrate` (parallel multi-agent builds in isolated worktrees).
 
 ---
 
