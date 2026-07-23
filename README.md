@@ -17,6 +17,7 @@ The point is to show *how you steer an agent to produce SOLID code* — DRY, no 
 ## Quick start
 
 ```bash
+cp .env.example .env.local   # create your local settings (works as-is)
 pnpm install       # install dependencies
 pnpm db:push       # create the SQLite schema (makes ./local.db)
 pnpm dev           # start the app → http://localhost:3000
@@ -24,7 +25,7 @@ pnpm dev           # start the app → http://localhost:3000
 
 Open http://localhost:3000, create an account, and add an item.
 
-> `.env.local` already ships with working local defaults (SQLite + a dev auth secret). Copy `.env.example` if you ever need to recreate it.
+> `.env.local` is gitignored, so a fresh clone has none — `cp .env.example .env.local` creates it. The defaults (SQLite + a dev auth secret) run as-is; generate a real `BETTER_AUTH_SECRET` (`openssl rand -base64 32`) before you deploy.
 
 ## The two tests (how you *see* it working)
 

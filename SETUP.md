@@ -101,8 +101,9 @@ cd wr201-demo
 ```
 If you were given a **folder**, just `cd` into it.
 
-Then, three commands to bring it to life:
+Then bring it to life:
 ```
+cp .env.example .env.local   # create your local settings (works as-is for local)
 pnpm install       # download what the app needs (one-time, ~1 min)
 pnpm db:push       # create the local database file
 pnpm dev           # start the app
